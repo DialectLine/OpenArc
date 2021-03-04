@@ -1,0 +1,453 @@
+{
+  "colors": [
+    {
+      "name": "Beryl",
+      "codes": [
+        {
+          "type": "color",
+          "value": "053"
+        },
+        {
+          "type": "brand",
+          "value": "924245"
+        },
+        {
+          "type": "nexa",
+          "value": "9RFRB"
+        }
+      ],
+      "year": "2008-21",
+      "manufacturer": "Geely",
+      "models": [],
+      "type": "metallic&sol;mica",
+      "color": "green",
+      "use": "exterior",
+      "country": "international",
+      "backgroundColor": "#000000",
+      "foregroundColor": "#fff",
+      "group": "colission"
+    },
+    {
+      "name": "Cream",
+      "codes": [
+        {
+          "type": "color",
+          "value": "053"
+        },
+        {
+          "type": "nexa",
+          "value": "8KL4"
+        }
+      ],
+      "year": "1994-",
+      "manufacturer": "White Volvo",
+      "models": [],
+      "type": "solid",
+      "color": "Yellow",
+      "use": "exterior",
+      "country": "international",
+      "backgroundColor": "#ffff00",
+      "foregroundColor": "#000",
+      "group": "commercial"
+    },
+    {
+      "name": "Aubergine",
+      "codes": [
+        {
+          "type": "color",
+          "value": "053"
+        },
+        {
+          "type": "nexa",
+          "value": "DH17"
+        }
+      ],
+      "year": "1976-77",
+      "manufacturer": "Volvo",
+      "models": [],
+      "type": "solid",
+      "color": "red",
+      "use": "exterior",
+      "country": "international",
+      "backgroundColor": "#3d0000",
+      "foregroundColor": "#fff",
+      "group": "colission"
+    },
+    {
+      "name": "Bordeauxrot",
+      "codes": [
+        {
+          "type": "color",
+          "value": "053"
+        },
+        {
+          "type": "nexa",
+          "value": "FE69"
+        },
+        {
+          "type": "nexa",
+          "value": "FE69B, 45114"
+        }
+      ],
+      "year": "1977-78",
+      "manufacturer": "BMW",
+      "models": [],
+      "type": "solid",
+      "color": "red",
+      "use": "exterior",
+      "country": "international",
+      "backgroundColor": "#550000",
+      "foregroundColor": "#fff",
+      "group": "colission"
+    },
+    {
+      "name": "Copper Brown",
+      "codes": [
+        {
+          "type": "color",
+          "value": "053"
+        },
+        {
+          "type": "nexa",
+          "value": "RR69B, RR69M"
+        }
+      ],
+      "year": "1981-82",
+      "manufacturer": "Subaru",
+      "models": [],
+      "type": "metallic&sol;mica",
+      "color": "brown",
+      "use": "exterior",
+      "country": "international",
+      "backgroundColor": "#6d3a0d",
+      "foregroundColor": "#fff",
+      "group": "colission"
+    },
+    {
+      "name": "Beige Antilope",
+      "codes": [
+        {
+          "type": "color",
+          "value": "053"
+        },
+        {
+          "type": "nexa",
+          "value": "9065B, EXF8M"
+        }
+      ],
+      "year": "1985-94",
+      "manufacturer": "Subaru",
+      "models": [],
+      "type": "metallic&sol;mica",
+      "color": "brown",
+      "use": "exterior",
+      "country": "international",
+      "backgroundColor": "#372a2a",
+      "foregroundColor": "#fff",
+      "group": "colission"
+    },
+    {
+      "name": "Blue Transar",
+      "codes": [
+        {
+          "type": "color",
+          "value": "053"
+        },
+        {
+          "type": "brand",
+          "value": "SAV053"
+        }
+      ],
+      "year": "1969",
+      "manufacturer": "Saviem",
+      "models": [],
+      "type": "solid",
+      "color": "blue",
+      "use": "exterior",
+      "country": "international",
+      "backgroundColor": "#073763",
+      "foregroundColor": "#fff",
+      "group": "commercial"
+    },
+    {
+      "name": "Ivory White",
+      "codes": [
+        {
+          "type": "color",
+          "value": "053"
+        },
+        {
+          "type": "shade",
+          "value": "45178"
+        },
+        {
+          "type": "nexa",
+          "value": "6lX7, 9RP6B"
+        }
+      ],
+      "year": "2008-13",
+      "manufacturer": "Toyota",
+      "models": [],
+      "type": "solid",
+      "color": "white",
+      "use": "exterior",
+      "country": "international",
+      "backgroundColor": "#ded2ca",
+      "foregroundColor": "#333",
+      "group": "colission"
+    },
+    {
+      "name": "Snow White",
+      "codes": [
+        {
+          "type": "color",
+          "value": "053"
+        },
+        {
+          "type": "nexa",
+          "value": "JX95"
+        }
+      ],
+      "year": "1983-91",
+      "manufacturer": "Subaru",
+      "models": [],
+      "type": "solid",
+      "color": "white",
+      "use": "exterior",
+      "country": "international",
+      "backgroundColor": "#ded2ca",
+      "foregroundColor": "#333",
+      "group": "colission"
+    },
+    {
+      "name": "Verde Irlanda",
+      "codes": [
+        {
+          "type": "color",
+          "value": "053"
+        },
+        {
+          "type": "brand",
+          "value": "FIA053"
+        }
+      ],
+      "year": "1985",
+      "manufacturer": "Fiat",
+      "models": [],
+      "type": "solid",
+      "color": "green",
+      "use": "exterior",
+      "country": "international",
+      "backgroundColor": "#025015",
+      "foregroundColor": "#fff",
+      "group": "colission"
+    },
+    {
+      "name": "Cream",
+      "codes": [
+        {
+          "type": "color",
+          "value": "053"
+        },
+        {
+          "type": "brand",
+          "value": "82951"
+        }
+      ],
+      "year": "-",
+      "manufacturer": "Volvo",
+      "models": [],
+      "type": "solid",
+      "color": "brown",
+      "use": "exterior",
+      "country": "international",
+      "backgroundColor": "#b38026",
+      "foregroundColor": "#fff",
+      "group": "colission"
+    },
+    {
+      "name": "White",
+      "codes": [
+        {
+          "type": "color",
+          "value": "053"
+        },
+        {
+          "type": "brand",
+          "value": "91714"
+        }
+      ],
+      "year": "1993-99",
+      "manufacturer": "Toyota",
+      "models": [],
+      "type": "solid",
+      "color": "white",
+      "use": "exterior",
+      "country": "international",
+      "backgroundColor": "#c6b89f",
+      "foregroundColor": "#333",
+      "group": "colission"
+    },
+    {
+      "name": "Rosso",
+      "codes": [
+        {
+          "type": "color",
+          "value": "IC 053"
+        },
+        {
+          "type": "shade",
+          "value": "44045"
+        },
+        {
+          "type": "nexa",
+          "value": "CA33, CA33B"
+        }
+      ],
+      "year": "1987-",
+      "manufacturer": "Iveco",
+      "models": [],
+      "type": "solid",
+      "color": "red",
+      "use": "exterior",
+      "country": "international",
+      "backgroundColor": "#cc2f1a",
+      "foregroundColor": "#fff",
+      "group": "commercial"
+    }
+  ],
+  "data": [
+    {
+      "category": "manufacturer",
+      "values": [
+        {
+          "label": "BMW",
+          "values": ["bm","bmw"]
+        },
+        {
+          "label": "Mercedes",
+          "values": [ "mer", "merc", "merce", "merced", "mers", "merse", "mersed", "mercede", "mercedes" ]
+        },
+        {
+          "label": "Toyota",
+          "values": [ "toy", "Toyo", "toyot", "toyod", "toyoda", "toyota", "toj", "tojo", "tojot", "tojota", "tojod", "tojoda" ]
+        },
+        {
+          "label": "Ford",
+          "values": [ "for", "ford", "fort" ]
+        },
+        {
+          "label": "Nissan",
+          "values": [ "nis", "nisa", "nisan", "niss", "nissa", "nissan" ]
+        },
+        {
+          "label": "General&nbsp;Motors",
+          "values": [ "gm" ]
+        },
+        {
+          "label": "Honda",
+          "values": [ "ho", "hon", "hond", "honda" ]
+        },
+        {
+          "label": "Aston Martin",
+          "values": [ "aus", "ast", "aust", "aste", "asti", "austi", "astin", "asten", "austin", "am" ]
+        },
+        {
+          "label": "Volvo",
+          "values": [ "vo", "vol", "volv", "volvo" ]
+        }
+      ]
+    },
+    {
+      "category": "color",
+      "values": [
+        {
+          "label": "blue",
+          "values": [ "blu", "blue", "bleu", "ble" ]
+        },
+        {
+          "label": "red",
+          "values": [ "red" ]
+        },
+        {
+          "label": "purple",
+          "values": [ "pur", "purp", "purpl", "purple" ]
+        },
+        {
+          "label": "white",
+          "values": [ "wh", "whi", "whit", "white", "wi", "wit", "wite" ]
+        }
+      ]
+    },
+    {
+      "category": "type",
+      "values": [
+        {
+          "label": "solid",
+          "values": [ "so", "sol", "soli", "solid" ]
+        },
+        {
+          "label": "metallic&sol;mica",
+          "values": [ "met", "meta", "metal", "metall", "metalli", "metallic", "mi", "mic", "mica" ]
+        }
+      ]
+    },
+    {
+      "category": "NCS",
+      "values": [
+        {
+          "label": "NCS&nbsp;S&nbsp;9000-N",
+          "values": [ "ncs s", "9000", "9000N", "9000-N", "s 9000", "9000-s" ]
+        }
+      ]
+    },
+    {
+      "category": "Color&nbsp;Code",
+      "values": [
+        {
+          "label": "053",
+          "values": [ "53", "05", "053" ]
+        }
+      ]
+    },
+    {
+      "category": "Paint&nbsp;line",
+      "values": [
+        {
+          "label": "AquaBase&nbsp;PLUS",
+          "values": [ "Aq", "aqu", "aqua", "aquab", "ak", "akw", "akwa" ]
+        },
+        {
+          "label": "2k",
+          "values": [ "2k" ]
+        },
+        {
+          "label": "Deltron&nbsp;2000",
+          "values": [ "de", "del", "delt", "deltr", "deltro", "deltron", "20", "200", "2000" ]
+        },
+        {
+          "label": "Envirobase&nbsp;HP",
+          "values": [ "en", "env", "envi", "envir", "enviro", "enviro", "pl", "plu", "plus" ]
+        },
+        {
+          "label": "OMNI&nbsp;AU",
+          "values": [ "om", "omn", "omni", "on", "onm", "onmi", "au" ]
+        },
+        {
+          "label": "OMNI&nbsp;PLUS",
+          "values": [ "om", "omn", "omni", "on", "onm", "onmi", "pl", "plu", "plus" ]
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "type": "manufacturer",
+      "values": [ "Mercedes", "Acura", "Nissan", "BMW", "Honda", "Ford", "Subaru", "Toyota", "Mercury", "Volvo" ]
+    },
+    {
+      "type": "year",
+      "values": [ "1960-69", "1970-79", "1980-89", "1990-99", "2000-10", "2010-2019", "2020-current" ]
+    }
+  ]
+}

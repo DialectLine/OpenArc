@@ -1,0 +1,74 @@
+﻿//Global
+@import "../../../../styles/foundation/colors";
+@import "../../../../styles/foundation/vars";
+
+//Prototype
+@import "colors";
+@import "vars";
+
+body {
+    display: flex;
+
+    flex: {
+        direction: column;
+    }
+
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100vw;
+
+    header, main, footer {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+
+    header {
+        background: {
+            color: $colorBlue;
+        }
+
+        color: $colorWhite;
+
+        flex: {
+            shrink: 0;
+            grow: 0;
+        }
+
+        height: 80px;
+
+        padding: {
+            bottom: 0;
+            left: 1.5rem;
+            right: 1.5rem;
+            top: 0;
+        }
+
+        h1 {
+            margin:{
+                block:{
+                    start:.5rem;
+                    end:.5rem;
+                }
+            }
+        }
+    }
+
+    footer {
+        flex: {
+            shrink: 0;
+            grow: 0;
+        }
+
+        height: 60px;
+    }
+
+    main {
+        flex: {
+            shrink: 1;
+            grow: 1;
+        }
+    }
+}

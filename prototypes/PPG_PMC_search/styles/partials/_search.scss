@@ -1,0 +1,1019 @@
+﻿//Global
+@import "../../../../styles/foundation/colors";
+@import "../../../../styles/foundation/vars";
+
+//Prototype
+@import "../foundation/colors";
+@import "../foundation/vars";
+
+.search {
+    display: flex;
+
+    flex: {
+        direction: row;
+    }
+
+    left: 50%;
+    margin: .5rem;
+    position: relative;
+    transform: translateX(-50%);
+
+    .searchType {
+        background: {
+            image: url(../media/searchType.png);
+            repeat: no-repeat;
+            size: contain;
+        }
+        cursor:pointer;
+
+        height: 4.389rem;
+        margin:{
+            right:.5rem;
+        }
+        position: relative;
+        width: 13.833rem;
+    }
+
+    .searchBox {
+        background: {
+            image: url(../media/search.png);
+            position: left;
+            repeat: no-repeat;
+            size: inherit;
+        }
+
+        display: flex;
+
+        flex: {
+            direction: row;
+        }
+
+        padding: 0;
+        height: 4.389rem;
+        position: relative;
+        width: calc(42.889rem - 4rem);
+
+        .clearSearch {
+            background: {
+                color: transparent;
+            }
+
+            flex: {
+                grow: 0;
+                shrink: 0;
+            }
+
+            height: 4.389rem;
+            position: relative;
+            width: 4rem;
+        }
+
+        .input {
+            bottom: .5rem;
+
+            flex: {
+                grow: 0;
+                shrink: 1;
+            }
+
+            height: 4.389rem;
+            position: relative;
+            overflow: hidden;
+            top: 0;
+            width: 100%;
+
+            input {
+                background: {
+                    color: transparent;
+                }
+
+                border: none;
+
+                font: {
+                    size: 1.25rem;
+                }
+
+                height: 4rem;
+                position: relative;
+
+                text: {
+                    overflow: ellipsis;
+                }
+
+                white: {
+                    space: nowrap;
+                }
+
+                width: calc(100% - 5rem);
+
+
+                &:focus {
+                    outline: none;
+                    border: none;
+                }
+
+                &.placeholder {
+                    color: lighten($colorGrey, 10%);
+
+                    font: {
+                        style: italic;
+                    }
+                }
+            }
+        }
+
+        .filters {
+            background: {
+                image: url(../media/filterBackground.png);
+                position: left center;
+                repeat: no-repeat;
+                size: cover;
+            }
+
+            display: flex;
+
+            flex: {
+                direction: row;
+                grow: 1;
+                shrink: 0;
+            }
+
+            max: {
+                width: 60%;
+            }
+
+            overflow: {
+                x: hidden;
+                y: hidden;
+            }
+
+            transition: width .25s ease-in-out;
+            width: auto;
+
+            .filter {
+                cursor: pointer;
+                height: 3.333rem;
+
+                flex: {
+                    grow: 0;
+                    shrink: 0;
+                }
+
+                margin: {
+                    right: .5rem;
+                    left: .5rem;
+                    top: .45rem;
+                }
+
+                position: relative;
+                width: 3.333rem;
+
+                &:not(.color) {
+                    background: {
+                        color: $colorWhite;
+                        position: center;
+                        repeat: no-repeat;
+                        size: contain;
+                    }
+
+                    border: {
+                        radius: .25rem;
+                    }
+
+                    &.solid {
+                        background: {
+                            image: url(../media/filterIcon_solid.png);
+                        }
+                    }
+
+                    &.metallic {
+                        background: {
+                            image: url(../media/filterIcon_metallic.png);
+                        }
+                    }
+
+                    &.exterior {
+                        background: {
+                            image: url(../media/filterIcon_exterior.png);
+                        }
+                    }
+
+                    &.interior {
+                        background: {
+                            image: url(../media/filterIcon_interior.png);
+                        }
+                    }
+
+                    &.trim {
+                        background: {
+                            image: url(../media/filterIcon_trim.png);
+                        }
+                    }
+
+                    &.roof {
+                        background: {
+                            image: url(../media/filterIcon_roof.png);
+                        }
+                    }
+
+                    &.wheel {
+                        background: {
+                            image: url(../media/filterIcon_wheel.png);
+                        }
+                    }
+
+                    &.underhood {
+                        background: {
+                            image: url(../media/filterIcon_underhood.png);
+                        }
+                    }
+
+                    &.miscellaneous {
+                        background: {
+                            image: url(../media/filterIcon_miscellaneous.png);
+                        }
+                    }
+                }
+
+                &.color {
+                    &.red {
+                        background: {
+                            color: $colorRed;
+                        }
+
+                        border: {
+                            radius: .25rem;
+                        }
+                    }
+
+                    &.brown {
+                        background: {
+                            color: $colorBrown;
+                        }
+
+                        border: {
+                            radius: .25rem;
+                        }
+                    }
+
+                    &.orange {
+                        background: {
+                            color: $colorOrange;
+                        }
+
+                        border: {
+                            radius: .25rem;
+                        }
+                    }
+
+                    &.yellow {
+                        background: {
+                            color: $colorYellow;
+                        }
+
+                        border: {
+                            radius: .25rem;
+                        }
+                    }
+
+                    &.green {
+                        background: {
+                            color: $colorGreen;
+                        }
+
+                        border: {
+                            radius: .25rem;
+                        }
+                    }
+
+                    &.blue {
+                        background: {
+                            color: $colorBlue;
+                        }
+
+                        border: {
+                            radius: .25rem;
+                        }
+                    }
+
+                    &.purple {
+                        background: {
+                            color: $colorPurple;
+                        }
+
+                        border: {
+                            radius: .25rem;
+                        }
+                    }
+
+                    &.black {
+                        background: {
+                            color: $colorBlack;
+                        }
+
+                        border: {
+                            radius: .25rem;
+                        }
+                    }
+
+                    &.grey {
+                        background: {
+                            color: $colorGrey;
+                        }
+
+                        border: {
+                            radius: .25rem;
+                        }
+                    }
+
+                    &.white {
+                        background: {
+                            color: $colorWhite;
+                        }
+
+                        border: {
+                            radius: .25rem;
+                        }
+                    }
+                }
+
+                &:first-child {
+                    margin: {
+                        left: 1rem;
+                    }
+                }
+
+                &:last-child {
+                    margin: {
+                        right: 3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .searchFilterToggle {
+        background: {
+            image: url(../media/searchOptions.png);
+            position: left;
+            repeat: no-repeat;
+            size: contain;
+        }
+
+        height: 4.389rem;
+
+        margin: {
+            left: -1rem;
+        }
+
+        position: relative;
+        width: 4.778rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .searchFilterContainer {
+        background: {
+            image: url(../media/searchOptionsContainer.png);
+            position: top right;
+            repeat: no-repeat;
+            size: contain;
+        }
+
+        display: flex;
+
+        flex: {
+            direction: column;
+        }
+
+        height: 39.389rem;
+
+        margin: {
+            top: -.26rem;
+        }
+
+        position: absolute;
+        left: 0;
+
+        margin: {
+            left: 29rem;
+        }
+
+        top: 4.389rem;
+        width: 27.667rem;
+        z-index: 1000;
+
+        .filtergroup {
+            position: relative;
+            width: 100%;
+
+            &:first-child {
+                margin: {
+                    top: 3rem;
+                }
+            }
+
+            &:nth-child(2), &:nth-child(3) {
+                margin: {
+                    top: 5rem;
+                }
+            }
+
+            div {
+                &:hover {
+                    outline: {
+                        color: midnightblue;
+                        offset: 4px;
+                        style: solid;
+                        width: 2px;
+                    }
+                }
+            }
+        }
+
+        .filterColor {
+            display: flex;
+
+            flex: {
+                direction: row;
+                wrap: wrap;
+            }
+
+            div {
+                border: {
+                    radius: .5rem;
+                }
+
+                cursor: pointer;
+                height: 3.333rem;
+
+                margin: {
+                    left: 1rem;
+                    top: 1rem;
+                }
+
+                width: 3.333rem;
+            }
+
+            .colorRed {
+                background: {
+                    color: $colorRed;
+                }
+            }
+
+            .colorBrown {
+                background: {
+                    color: $colorBrown;
+                }
+            }
+
+            .colorOrange {
+                background: {
+                    color: $colorOrange;
+                }
+            }
+
+            .colorYellow {
+                background: {
+                    color: $colorYellow;
+                }
+
+                outline: {
+                    color: $colorBrown;
+                    offset: -3px;
+                    width: 3px;
+                }
+            }
+
+            .colorGreen {
+                background: {
+                    color: $colorGreen;
+                }
+            }
+
+            .colorBlue {
+                background: {
+                    color: $colorBlue;
+                }
+            }
+
+            .colorPurple {
+                background: {
+                    color: $colorPurple;
+                }
+            }
+
+            .colorBlack {
+                background: {
+                    color: $colorBlack;
+                }
+            }
+
+            .colorGrey {
+                background: {
+                    color: $colorGrey;
+                }
+            }
+
+            .colorWhite {
+                background: {
+                    color: $colorWhite;
+                }
+
+                outline: {
+                    color: $colorGrey;
+                    offset: -3px;
+                    width: 3px;
+                }
+            }
+
+            .colorDuotone {
+                background: {
+                    color: $colorWhite;
+                    image: url(../media/color_duotone.png);
+                    position: center;
+                    repeat: no-repeat;
+                    size: contain;
+                }
+
+                outline: {
+                    color: $colorGrey;
+                    offset: -3px;
+                    width: 3px;
+                }
+            }
+        }
+
+        .filterType {
+            display: flex;
+
+            flex: {
+                direction: row;
+                wrap: wrap;
+            }
+
+            div {
+                background: {
+                    position: top left;
+                    repeat: no-repeat;
+                    size: contain;
+                }
+
+                cursor: pointer;
+                height: 2.944rem;
+
+                margin: {
+                    left: 1rem;
+                    top: 1rem;
+                }
+            }
+
+            .typeSolid {
+                background: {
+                    image: url(../media/optionTypeSolid.png);
+                }
+
+                width: 6.167rem;
+            }
+
+            .typeMetallic {
+                background: {
+                    image: url(../media/optionTypeMetallic.png);
+                }
+
+                width: 11rem;
+            }
+        }
+
+        .filterUse {
+            display: flex;
+
+            flex: {
+                direction: row;
+                wrap: wrap;
+            }
+
+            div {
+                background: {
+                    position: top left;
+                    repeat: no-repeat;
+                    size: contain;
+                }
+
+                cursor: pointer;
+                height: 2.944rem;
+
+                margin: {
+                    left: 1rem;
+                    top: 1rem;
+                }
+            }
+
+            .useExterior {
+                background: {
+                    image: url(../media/optionUseExterior.png);
+                }
+
+                width: 8.167rem;
+            }
+
+            .useInterior {
+                background: {
+                    image: url(../media/optionUseInterior.png);
+                }
+
+                width: 8.222rem;
+            }
+
+            .useTrim {
+                background: {
+                    image: url(../media/optionUseTrim.png);
+                }
+
+                width: 6.944rem;
+            }
+
+            .useRoof {
+                background: {
+                    image: url(../media/optionUseRoof.png);
+                }
+
+                width: 7.333rem;
+            }
+
+            .useWheel {
+                background: {
+                    image: url(../media/optionUseWheel.png);
+                }
+
+                width: 7.333rem;
+            }
+
+            .useChassis {
+                background: {
+                    image: url(../media/optionUseChassis.png);
+                }
+
+                width: 8.111rem;
+            }
+
+            .useUnderhood {
+                background: {
+                    image: url(../media/optionUseUnderhood.png);
+                }
+
+                width: 10.333rem;
+            }
+
+            .useMiscellaneous {
+                background: {
+                    image: url(../media/optionUseMiscellaneous.png);
+                }
+
+                width: 11.333rem;
+            }
+        }
+    }
+}
+
+.suggestions {
+    background: {
+        color: $colorWhite;
+    }
+
+    color: $colorBlack;
+
+    border: {
+        radius: 2px;
+        style: solid;
+
+        bottom: {
+            width: 2px;
+        }
+
+        left: {
+            width: 2px;
+        }
+
+        right: {
+            width: 2px;
+        }
+
+        top: {
+            width: 0;
+        }
+    }
+
+    position: absolute;
+    top: 8.85rem;
+    left: 34%;
+    transform: translateX(-49%);
+    width: calc(42.889rem - .6rem);
+
+    div {
+        font: {
+            size: 1.5rem;
+        }
+
+        height: 2.75rem;
+
+        line: {
+            height: 2em;
+        }
+
+        padding: {
+            left: 1rem;
+        }
+
+        &:hover {
+            background: {
+                color: lighten($colorBlue, 15%);
+            }
+
+            cursor: pointer;
+        }
+    }
+
+    z-index: 999;
+}
+
+.filterList {
+    background: {
+        color: transparent;
+        image: url(../media/queryFilterBackground.png);
+        position: left center;
+        repeat: repeat-x;
+        size: contain;
+    }
+
+    display: flex;
+
+    flex: {
+        direction: row;
+    }
+
+    height: 4.889rem;
+    left: 0;
+    width: 100%;
+
+    .queryFilter {
+        background: {
+            color: $colorGrey;
+        }
+
+        border: {
+            radius: .25rem;
+        }
+
+        color: $colorWhite;
+
+        font: {
+            size: 1rem;
+        }
+
+        height: 2.5rem;
+
+        line: {
+            height: 2.5rem;
+        }
+
+        margin: {
+            top: 1rem;
+            left: 1rem;
+        }
+
+        padding: {
+            left: 1rem;
+            right: 1rem;
+        }
+
+        &:first-child {
+            margin: {
+                left: 1rem;
+            }
+        }
+
+        .fa, svg {
+            margin: {
+                left: 1rem;
+            }
+        }
+    }
+
+    span {
+        font: {
+            size: 1rem;
+        }
+
+        line: {
+            height: 4rem;
+        }
+
+        margin: {
+            left: .5rem;
+        }
+    }
+
+    .fa{
+        cursor:pointer;
+    }
+}
+
+.resultHeader {
+}
+
+.subFilters {
+    background:{
+        color:#eee;
+    }
+    display: block;
+    height: 4.389rem;
+
+    overflow: {
+        x: auto;
+        y: hidden;
+    }
+    margin:{
+        left:5px;
+        right:5px;
+        top:-.75rem;
+    }
+    padding:{
+        top:.75rem;
+    }
+    position: relative;
+    width: calc(100% - 10px);
+    white-space: nowrap;
+
+    .filterGroup {
+        border: {
+            right: {
+                style: solid;
+                width: thin;
+            }
+        }
+
+        display: inline-flex;
+
+        flex: {
+            direction: row;
+        }
+
+        padding: {
+            bottom: 0;
+            left: 1rem;
+            right: 1rem;
+            top: 0;
+        }
+
+        white-space: normal;
+
+
+        label {
+            font: {
+                size:1.5rem;
+                weight: bold;
+            }
+
+            margin: {
+                right: .5rem;
+            }
+        }
+
+        .subFilter {
+            background: {
+                color: white;
+            }
+
+            border: {
+                color: $colorBlack;
+                style: solid;
+                width: 2px;
+            }
+
+            cursor: pointer;
+
+            font: {
+                size: 1.5rem;
+            }
+
+            margin: {
+                right: .5rem;
+            }
+
+            padding: {
+                left: 1rem;
+                right: 1rem;
+            }
+
+            &:hover {
+                background: {
+                    color: #eee;
+                }
+            }
+        }
+    }
+}
+
+.warningHeader {
+    background: {
+        color: transparent;
+        image: url(../media/warningHeader.png);
+        position: top left;
+        repeat: no-repeat;
+        size: initial;
+    }
+
+    height: 4.889rem;
+
+    margin: {
+        top: -.25rem;
+    }
+}
+
+.resultList {
+    display: flex;
+
+    flex: {
+        direction: row;
+        grow: 1;
+        shrink: 1;
+        wrap: wrap;
+    }
+
+    height: auto;
+    overflow:{
+        x:hidden;
+        y:auto;
+    }
+    position: relative;
+    z-index:1;
+
+
+    .colorCard {
+        height: 22.722rem;
+
+        margin: {
+            left: 1rem;
+            top: .75rem;
+        }
+
+        position: relative;
+        width: 17.222rem;
+
+
+        .ccBackground {
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 4rem;
+        }
+
+        .ccContainer {
+            background: {
+                color: transparent;
+                image: url(../media/colorCardBackground.png);
+            }
+
+            display: flex;
+
+            flex: {
+                direction: column;
+            }
+
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+
+            .ccHeader {
+                height: 3rem;
+                padding: 1rem;
+                position: relative;
+                width: 100%;
+
+                h3 {
+                    margin: {
+                        block: {
+                            end: 0;
+                            start: 0;
+                        }
+                    }
+                }
+            }
+
+            .ccContent {
+                display: flex;
+                flex:{
+                    direction:column;
+                }
+                padding: 1rem;
+                position: relative;
+            }
+        }
+    }
+}

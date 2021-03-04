@@ -1,0 +1,10 @@
+﻿@import "colors";
+@import "vars";
+
+html{
+    color:$documentDefaultTextColor;
+    font:{
+        family:"Open Sans", Sans-serif;
+        size:$fontSizeNormal;
+    }
+}

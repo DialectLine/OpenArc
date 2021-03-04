@@ -1,0 +1,65 @@
+﻿//Global
+@import "../../../../styles/foundation/colors";
+@import "../../../../styles/foundation/vars";
+
+//Prototype
+@import "../foundation/colors";
+@import "../foundation/vars";
+
+stage {
+    background: {
+        image: url(../media/window.png);
+        position: center;
+        repeat: no-repeat;
+        size: contain;
+    }
+
+    display: flex;
+
+    flex: {
+        direction: column;
+    }
+
+    height: 60rem;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 106.667rem;
+
+    .prototypeHeader {
+        display: block;
+
+        flex: {
+            shrink: 0;
+            grow: 0;
+        }
+
+        height: 4rem;
+    }
+
+    .prototypeMain {
+        display: flex;
+
+        flex: {
+            direction: column;
+            grow: 1;
+            shrink: 1;
+        }
+
+        max:{
+            height:55.7rem;
+        }
+        width:106.64rem;
+    }
+
+    .prototypeFooter {
+        display: block;
+        height: 0;
+
+        flex: {
+            shrink: 0;
+            grow: 0;
+        }
+    }
+}

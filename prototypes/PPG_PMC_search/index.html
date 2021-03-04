@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>PPG Paint Manager Cloud: Search box with Breakout Filters</title>
+
+    <!-- Libraries -->
+    <script src="../../libraries/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="../../libraries/fontawesome/js/all.min.js"></script>'
+    
+    <!-- Scripts -->
+    <script src="scripts/scripts.js"></script>
+
+    <!-- CSS -->
+    <link href="../../styles/OpenArcPrototypes.css" rel="stylesheet" />
+    <link href="styles/prototype.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>PPG Paint Manager Cloud : Search Prototype</h1>
+    </header>
+    <main>
+        <stage class="stage">
+            <div class="prototypeHeader"></div>
+            <div class="prototypeMain">
+                <div class="search">
+                    <div class="searchType"></div>
+                    <div class="searchBox">
+                        <div class="clearSearch" onclick="clearSearch()"></div>
+                        <div class="input"><input type="text" onkeyup="processInput()" onfocus="$(this).select()"/></div>
+                        <div class="filters"></div>
+                    </div>
+                    <div role="button" class="searchFilterToggle" onclick="toggleFilters()" onfocus="checkFocus()"></div>
+                    <div class="searchFilterContainer">
+                        <div class="filtergroup filterColor">
+                            <div role="button" class="colorRed" onclick="filter('color','red')"></div>
+                            <div role="button" class="colorBrown" onclick="filter('color','brown')"></div>
+                            <div role="button" class="colorOrange" onclick="filter('color','orange')"></div>
+                            <div role="button" class="colorYellow" onclick="filter('color','yellow')"></div>
+                            <div role="button" class="colorGreen" onclick="filter('color','green')"></div>
+                            <div role="button" class="colorBlue" onclick="filter('color','blue')"></div>
+                            <div role="button" class="colorPurple" onclick="filter('color','purple')"></div>
+                            <div role="button" class="colorBlack" onclick="filter('color','black')"></div>
+                            <div role="button" class="colorGrey" onclick="filter('color','grey')"></div>
+                            <div role="button" class="colorWhite" onclick="filter('color','white')"></div>
+                            <div role="button" class="colorDuotone" onclick="filter('color','duotone')"></div>
+                        </div>
+                        <div class="filtergroup filterType">
+                            <div role="button" class="typeSolid" onclick="filter('type','solid')"></div>
+                            <div role="button" class="typeMetallic" onclick="filter('type','metallic')"></div>
+                        </div>
+                        <div class="filtergroup filterUse">
+                            <div role="button" class="useExterior" onclick="filter('use','exterior')"></div>
+                            <div role="button" class="useInterior" onclick="filter('use','interior')"></div>
+                            <div role="button" class="useTrim" onclick="filter('use','trim')"></div>
+                            <div role="button" class="useRoof" onclick="filter('use','roof')"></div>
+                            <div role="button" class="useWheel" onclick="filter('use','wheel')"></div>
+                            <div role="button" class="useChassis" onclick="filter('use','chassis')"></div>
+                            <div role="button" class="useUnderhood" onclick="filter('use','underhood')"></div>
+                            <div role="button" class="useMiscellaneous" onclick="filter('use','miscellaneous')"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prototypeFooter"></div>
+        </stage>
+    </main>
+    <footer>
+    </footer>
+    <script>
+
+        $(document).ready(function () {
+            //Default
+            $(".searchFilterContainer").hide();
+
+
+            addPlaceholder();
+            launchSite();
+        });
+
+    </script>
+</body>
+</html>

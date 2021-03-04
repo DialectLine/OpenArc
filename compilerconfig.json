@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "styles/PPG_PM_C.css",
+    "inputFile": "styles/PPG_PM_C.scss"
+  },
+  {
+    "outputFile": "styles/OpenArcPrototypes.css",
+    "inputFile": "styles/OpenArcPrototypes.scss"
+  },
+  {
+    "outputFile": "prototypes/PPG_PMC_search/styles/prototype.css",
+    "inputFile": "prototypes/PPG_PMC_search/styles/prototype.scss"
+  }
+]

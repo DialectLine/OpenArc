@@ -1,0 +1,497 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100vw; }
+  body header, body main, body footer {
+    display: block;
+    position: relative;
+    width: 100%; }
+  body header {
+    background-color: #084e71;
+    color: #ffffff;
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: 80px;
+    padding-bottom: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0; }
+    body header h1 {
+      margin-block-start: .5rem;
+      margin-block-end: .5rem; }
+  body footer {
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: 60px; }
+  body main {
+    flex-shrink: 1;
+    flex-grow: 1; }
+
+stage {
+  background-image: url(../media/window.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  height: 60rem;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 106.667rem; }
+  stage .prototypeHeader {
+    display: block;
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: 4rem; }
+  stage .prototypeMain {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-height: 55.7rem;
+    width: 106.64rem; }
+  stage .prototypeFooter {
+    display: block;
+    height: 0;
+    flex-shrink: 0;
+    flex-grow: 0; }
+
+.search {
+  display: flex;
+  flex-direction: row;
+  left: 50%;
+  margin: .5rem;
+  position: relative;
+  transform: translateX(-50%); }
+  .search .searchType {
+    background-image: url(../media/searchType.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    height: 4.389rem;
+    margin-right: .5rem;
+    position: relative;
+    width: 13.833rem; }
+  .search .searchBox {
+    background-image: url(../media/search.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: inherit;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    height: 4.389rem;
+    position: relative;
+    width: calc(42.889rem - 4rem); }
+    .search .searchBox .clearSearch {
+      background-color: transparent;
+      flex-grow: 0;
+      flex-shrink: 0;
+      height: 4.389rem;
+      position: relative;
+      width: 4rem; }
+    .search .searchBox .input {
+      bottom: .5rem;
+      flex-grow: 0;
+      flex-shrink: 1;
+      height: 4.389rem;
+      position: relative;
+      overflow: hidden;
+      top: 0;
+      width: 100%; }
+      .search .searchBox .input input {
+        background-color: transparent;
+        border: none;
+        font-size: 1.25rem;
+        height: 4rem;
+        position: relative;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: calc(100% - 5rem); }
+        .search .searchBox .input input:focus {
+          outline: none;
+          border: none; }
+        .search .searchBox .input input.placeholder {
+          color: #9a9a9a;
+          font-style: italic; }
+    .search .searchBox .filters {
+      background-image: url(../media/filterBackground.png);
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      flex-shrink: 0;
+      max-width: 60%;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      transition: width .25s ease-in-out;
+      width: auto; }
+      .search .searchBox .filters .filter {
+        cursor: pointer;
+        height: 3.333rem;
+        flex-grow: 0;
+        flex-shrink: 0;
+        margin-right: .5rem;
+        margin-left: .5rem;
+        margin-top: .45rem;
+        position: relative;
+        width: 3.333rem; }
+        .search .searchBox .filters .filter:not(.color) {
+          background-color: #ffffff;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          border-radius: .25rem; }
+          .search .searchBox .filters .filter:not(.color).solid {
+            background-image: url(../media/filterIcon_solid.png); }
+          .search .searchBox .filters .filter:not(.color).metallic {
+            background-image: url(../media/filterIcon_metallic.png); }
+          .search .searchBox .filters .filter:not(.color).exterior {
+            background-image: url(../media/filterIcon_exterior.png); }
+          .search .searchBox .filters .filter:not(.color).interior {
+            background-image: url(../media/filterIcon_interior.png); }
+          .search .searchBox .filters .filter:not(.color).trim {
+            background-image: url(../media/filterIcon_trim.png); }
+          .search .searchBox .filters .filter:not(.color).roof {
+            background-image: url(../media/filterIcon_roof.png); }
+          .search .searchBox .filters .filter:not(.color).wheel {
+            background-image: url(../media/filterIcon_wheel.png); }
+          .search .searchBox .filters .filter:not(.color).underhood {
+            background-image: url(../media/filterIcon_underhood.png); }
+          .search .searchBox .filters .filter:not(.color).miscellaneous {
+            background-image: url(../media/filterIcon_miscellaneous.png); }
+        .search .searchBox .filters .filter.color.red {
+          background-color: #ff0000;
+          border-radius: .25rem; }
+        .search .searchBox .filters .filter.color.brown {
+          background-color: #442916;
+          border-radius: .25rem; }
+        .search .searchBox .filters .filter.color.orange {
+          background-color: #ff5e00;
+          border-radius: .25rem; }
+        .search .searchBox .filters .filter.color.yellow {
+          background-color: #ffdb00;
+          border-radius: .25rem; }
+        .search .searchBox .filters .filter.color.green {
+          background-color: #006031;
+          border-radius: .25rem; }
+        .search .searchBox .filters .filter.color.blue {
+          background-color: #084e71;
+          border-radius: .25rem; }
+        .search .searchBox .filters .filter.color.purple {
+          background-color: #53108e;
+          border-radius: .25rem; }
+        .search .searchBox .filters .filter.color.black {
+          background-color: #000000;
+          border-radius: .25rem; }
+        .search .searchBox .filters .filter.color.grey {
+          background-color: #808080;
+          border-radius: .25rem; }
+        .search .searchBox .filters .filter.color.white {
+          background-color: #ffffff;
+          border-radius: .25rem; }
+        .search .searchBox .filters .filter:first-child {
+          margin-left: 1rem; }
+        .search .searchBox .filters .filter:last-child {
+          margin-right: 3rem; }
+  .search .searchFilterToggle {
+    background-image: url(../media/searchOptions.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 4.389rem;
+    margin-left: -1rem;
+    position: relative;
+    width: 4.778rem; }
+    .search .searchFilterToggle:hover {
+      cursor: pointer; }
+  .search .searchFilterContainer {
+    background-image: url(../media/searchOptionsContainer.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    height: 39.389rem;
+    margin-top: -.26rem;
+    position: absolute;
+    left: 0;
+    margin-left: 29rem;
+    top: 4.389rem;
+    width: 27.667rem;
+    z-index: 1000; }
+    .search .searchFilterContainer .filtergroup {
+      position: relative;
+      width: 100%; }
+      .search .searchFilterContainer .filtergroup:first-child {
+        margin-top: 3rem; }
+      .search .searchFilterContainer .filtergroup:nth-child(2), .search .searchFilterContainer .filtergroup:nth-child(3) {
+        margin-top: 5rem; }
+      .search .searchFilterContainer .filtergroup div:hover {
+        outline-color: midnightblue;
+        outline-offset: 4px;
+        outline-style: solid;
+        outline-width: 2px; }
+    .search .searchFilterContainer .filterColor {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .search .searchFilterContainer .filterColor div {
+        border-radius: .5rem;
+        cursor: pointer;
+        height: 3.333rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        width: 3.333rem; }
+      .search .searchFilterContainer .filterColor .colorRed {
+        background-color: #ff0000; }
+      .search .searchFilterContainer .filterColor .colorBrown {
+        background-color: #442916; }
+      .search .searchFilterContainer .filterColor .colorOrange {
+        background-color: #ff5e00; }
+      .search .searchFilterContainer .filterColor .colorYellow {
+        background-color: #ffdb00;
+        outline-color: #442916;
+        outline-offset: -3px;
+        outline-width: 3px; }
+      .search .searchFilterContainer .filterColor .colorGreen {
+        background-color: #006031; }
+      .search .searchFilterContainer .filterColor .colorBlue {
+        background-color: #084e71; }
+      .search .searchFilterContainer .filterColor .colorPurple {
+        background-color: #53108e; }
+      .search .searchFilterContainer .filterColor .colorBlack {
+        background-color: #000000; }
+      .search .searchFilterContainer .filterColor .colorGrey {
+        background-color: #808080; }
+      .search .searchFilterContainer .filterColor .colorWhite {
+        background-color: #ffffff;
+        outline-color: #808080;
+        outline-offset: -3px;
+        outline-width: 3px; }
+      .search .searchFilterContainer .filterColor .colorDuotone {
+        background-color: #ffffff;
+        background-image: url(../media/color_duotone.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        outline-color: #808080;
+        outline-offset: -3px;
+        outline-width: 3px; }
+    .search .searchFilterContainer .filterType {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .search .searchFilterContainer .filterType div {
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+        height: 2.944rem;
+        margin-left: 1rem;
+        margin-top: 1rem; }
+      .search .searchFilterContainer .filterType .typeSolid {
+        background-image: url(../media/optionTypeSolid.png);
+        width: 6.167rem; }
+      .search .searchFilterContainer .filterType .typeMetallic {
+        background-image: url(../media/optionTypeMetallic.png);
+        width: 11rem; }
+    .search .searchFilterContainer .filterUse {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .search .searchFilterContainer .filterUse div {
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+        height: 2.944rem;
+        margin-left: 1rem;
+        margin-top: 1rem; }
+      .search .searchFilterContainer .filterUse .useExterior {
+        background-image: url(../media/optionUseExterior.png);
+        width: 8.167rem; }
+      .search .searchFilterContainer .filterUse .useInterior {
+        background-image: url(../media/optionUseInterior.png);
+        width: 8.222rem; }
+      .search .searchFilterContainer .filterUse .useTrim {
+        background-image: url(../media/optionUseTrim.png);
+        width: 6.944rem; }
+      .search .searchFilterContainer .filterUse .useRoof {
+        background-image: url(../media/optionUseRoof.png);
+        width: 7.333rem; }
+      .search .searchFilterContainer .filterUse .useWheel {
+        background-image: url(../media/optionUseWheel.png);
+        width: 7.333rem; }
+      .search .searchFilterContainer .filterUse .useChassis {
+        background-image: url(../media/optionUseChassis.png);
+        width: 8.111rem; }
+      .search .searchFilterContainer .filterUse .useUnderhood {
+        background-image: url(../media/optionUseUnderhood.png);
+        width: 10.333rem; }
+      .search .searchFilterContainer .filterUse .useMiscellaneous {
+        background-image: url(../media/optionUseMiscellaneous.png);
+        width: 11.333rem; }
+
+.suggestions {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 2px;
+  border-style: solid;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-right-width: 2px;
+  border-top-width: 0;
+  position: absolute;
+  top: 8.85rem;
+  left: 34%;
+  transform: translateX(-49%);
+  width: calc(42.889rem - .6rem);
+  z-index: 999; }
+  .suggestions div {
+    font-size: 1.5rem;
+    height: 2.75rem;
+    line-height: 2em;
+    padding-left: 1rem; }
+    .suggestions div:hover {
+      background-color: #0d7fb8;
+      cursor: pointer; }
+
+.filterList {
+  background-color: transparent;
+  background-image: url(../media/queryFilterBackground.png);
+  background-position: left center;
+  background-repeat: repeat-x;
+  background-size: contain;
+  display: flex;
+  flex-direction: row;
+  height: 4.889rem;
+  left: 0;
+  width: 100%; }
+  .filterList .queryFilter {
+    background-color: #808080;
+    border-radius: .25rem;
+    color: #ffffff;
+    font-size: 1rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    .filterList .queryFilter:first-child {
+      margin-left: 1rem; }
+    .filterList .queryFilter .fa, .filterList .queryFilter svg {
+      margin-left: 1rem; }
+  .filterList span {
+    font-size: 1rem;
+    line-height: 4rem;
+    margin-left: .5rem; }
+  .filterList .fa {
+    cursor: pointer; }
+
+.subFilters {
+  background-color: #eee;
+  display: block;
+  height: 4.389rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: -.75rem;
+  padding-top: .75rem;
+  position: relative;
+  width: calc(100% - 10px);
+  white-space: nowrap; }
+  .subFilters .filterGroup {
+    border-right-style: solid;
+    border-right-width: thin;
+    display: inline-flex;
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0;
+    white-space: normal; }
+    .subFilters .filterGroup label {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-right: .5rem; }
+    .subFilters .filterGroup .subFilter {
+      background-color: white;
+      border-color: #000000;
+      border-style: solid;
+      border-width: 2px;
+      cursor: pointer;
+      font-size: 1.5rem;
+      margin-right: .5rem;
+      padding-left: 1rem;
+      padding-right: 1rem; }
+      .subFilters .filterGroup .subFilter:hover {
+        background-color: #eee; }
+
+.warningHeader {
+  background-color: transparent;
+  background-image: url(../media/warningHeader.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: initial;
+  height: 4.889rem;
+  margin-top: -.25rem; }
+
+.resultList {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  z-index: 1; }
+  .resultList .colorCard {
+    height: 22.722rem;
+    margin-left: 1rem;
+    margin-top: .75rem;
+    position: relative;
+    width: 17.222rem; }
+    .resultList .colorCard .ccBackground {
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 4rem; }
+    .resultList .colorCard .ccContainer {
+      background-color: transparent;
+      background-image: url(../media/colorCardBackground.png);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%; }
+      .resultList .colorCard .ccContainer .ccHeader {
+        height: 3rem;
+        padding: 1rem;
+        position: relative;
+        width: 100%; }
+        .resultList .colorCard .ccContainer .ccHeader h3 {
+          margin-block-end: 0;
+          margin-block-start: 0; }
+      .resultList .colorCard .ccContainer .ccContent {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        position: relative; }
